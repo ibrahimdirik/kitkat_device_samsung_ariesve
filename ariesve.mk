@@ -30,6 +30,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ARIESVE.rle:root/ARIESVE.rle \
     $(LOCAL_PATH)/lpm/charging.rle:root/charging.rle
 
+# Files needed for AOKP ancora
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/WallpaperCropper.apk:system/priv-app/WallpaperCropper.apk
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \

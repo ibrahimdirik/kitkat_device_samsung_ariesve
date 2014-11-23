@@ -27,9 +27,6 @@ ro.sf.lcd_density=240
 # This is a 16.16 fixed point number.
 ro.opengles.version=131072
 
-# Perform dexopt in data as our cache partition is very small
-dalvik.vm.dexopt-data-only=1
-
 # QCOM
 debug.sf.hw=1
 debug.egl.hw=1
@@ -65,3 +62,11 @@ ro.sys.fw.bg_apps_limit=16
 
 # Disable metadata mode
 debug.camcorder.disablemeta=1
+
+# Hardware info
+ro.device.chipset=Qualcomm Snapdragon MSM8255T
+ro.device.gpu=Qualcomm Adreno 205
+ro.device.front_cam=0.3 MegaPixel
+ro.device.rear_cam=5.0 MegaPixel
+ro.device.screen_res=480 x 800
+ro.device.developer=K_TECH

@@ -47,13 +47,13 @@ TARGET_CPU_VARIANT := scorpion
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 
-# Compiler
-TARGET_GCC_VERSION_EXP := 4.8
+# Touchscreen
+BOARD_USE_LEGACY_TOUCHSCREEN := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00400000
 BOARD_KERNEL_PAGESIZE := 4096
-TARGET_KERNEL_SOURCE := kernel/samsung/msm7x30/
+TARGET_KERNEL_SOURCE := kernel/samsung/msm7x30-common
 TARGET_KERNEL_CONFIG := ariesve_defconfig
 
 # WiFi

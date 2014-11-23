@@ -1,13 +1,23 @@
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
+# Inherit GSM common stuff
+$(call inherit-product, vendor/aokp/configs/gsm.mk)
+
+# Inherit AOKP common stuff.
+$(call inherit-product, vendor/aokp/configs/common.mk)
 
 # Inherit device configuration
-$(call inherit-product, $(LOCAL_PATH)/full_ariesve.mk)
+$(call inherit-product, device/samsung/ariesve/full_ariesve.mk)
+
+# ariesve overlay
+PRODUCT_PACKAGE_OVERLAYS += device/samsung/ariesve/overlay
+
+# boot animation
+PRODUCT_COPY_FILES += \
+    vendor/aokp/prebuilt/bootanimation/bootanimation_720.zip:system/media/bootanimation.zip
 
 PRODUCT_RELEASE_NAME := ariesve
 
 # Setup device configuration
-PRODUCT_NAME := cm_ariesve
+PRODUCT_NAME := aokp_ariesve
 PRODUCT_DEVICE := ariesve
 PRODUCT_BRAND := Samsung
 PRODUCT_MANUFACTURER := Samsung
