@@ -69,4 +69,3 @@ ro.device.gpu=Qualcomm Adreno 205
 ro.device.front_cam=0.3 MegaPixel
 ro.device.rear_cam=5.0 MegaPixel
 ro.device.screen_res=480 x 800
-ro.device.developer=K_TECH
